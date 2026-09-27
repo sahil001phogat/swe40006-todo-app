@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Docker To-Do App</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 480px; margin: 60px auto; background: #f4f6f8; }
+    h1 { color: #222; }
+    form { display: flex; gap: 8px; margin-bottom: 20px; }
+    input[type=text] { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 8px 14px; border: none; border-radius: 4px; background: #2563eb; color: white; cursor: pointer; }
+    button.delete { background: #dc2626; }
+    ul { list-style: none; padding: 0; }
+    li { display: flex; justify-content: space-between; align-items: center; background: white; padding: 10px 14px; margin-bottom: 8px; border-radius: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.08); }
+    li.done span { text-decoration: line-through; color: #888; }
+    .actions { display: flex; gap: 6px; }
+    footer { margin-top: 30px; font-size: 12px; color: #888; }
+  </style>
+</head>
+<body>
+  <h1>🐳 Dockerized To-Do App</h1>
+  <form action="/add" method="post">
+    <input type="text" name="task" placeholder="Add a new task..." required>
+    <button type="submit">Add</button>
+  </form>
+  <ul>
+    {% for id, task in tasks.items() %}
+      <li class="{{ 'done' if task.done else '' }}">
+        <span>{{ task.text }}</span>
+        <div class="actions">
+          <form action="/toggle/{{ id }}" method="post">
+            <button type="submit">{{ 'Undo' if task.done else 'Done' }}</button>
+          </form>
+          <form action="/delete/{{ id }}" method="post">
+            <button type="submit" class="delete">Delete</button>
+          </form>
+        </div>
+      </li>
+    {% else %}
+      <li>No tasks yet — add one above!</li>
+    {% endfor %}
+  </ul>
+  <footer>SWE40006 Task 4.3 — Containerized Flask app running in Docker.</footer>
+</body>
+</html>
