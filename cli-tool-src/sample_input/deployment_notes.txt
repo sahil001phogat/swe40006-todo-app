@@ -1,0 +1,4 @@
+SWE40006 covers software deployment and evolution. Deployment involves packaging an
+application, containerizing it, and deploying it to a target environment. Continuous
+deployment automates this process so new versions reach production quickly and reliably.
+Good documentation and testing make deployment safer and easier to evolve over time.

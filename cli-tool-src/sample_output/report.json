@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-09-27T01:38:05.065064+00:00",
+  "files_processed": [
+    "deployment_notes.txt",
+    "docker_notes.txt"
+  ],
+  "totals": {
+    "files": 2,
+    "lines": 8,
+    "words": 92,
+    "unique_words": 66
+  },
+  "per_file": {
+    "deployment_notes.txt": {
+      "lines": 4,
+      "words": 46
+    },
+    "docker_notes.txt": {
+      "lines": 4,
+      "words": 46
+    }
+  },
+  "top_words": [
+    {
+      "word": "and",
+      "count": 8
+    },
+    {
+      "word": "deployment",
+      "count": 5
+    },
+    {
+      "word": "it",
+      "count": 3
+    },
+    {
+      "word": "an",
+      "count": 2
+    },
+    {
+      "word": "application",
+      "count": 2
+    },
+    {
+      "word": "to",
+      "count": 2
+    },
+    {
+      "word": "a",
+      "count": 2
+    },
+    {
+      "word": "environment",
+      "count": 2
+    },
+    {
+      "word": "so",
+      "count": 2
+    },
+    {
+      "word": "production",
+      "count": 2
+    },
+    {
+      "word": "testing",
+      "count": 2
+    },
+    {
+      "word": "docker",
+      "count": 2
+    },
+    {
+      "word": "containers",
+      "count": 2
+    },
+    {
+      "word": "of",
+      "count": 2
+    },
+    {
+      "word": "the",
+      "count": 2
+    }
+  ]
+}

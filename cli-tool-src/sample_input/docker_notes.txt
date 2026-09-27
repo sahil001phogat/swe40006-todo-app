@@ -1,0 +1,4 @@
+Docker is a platform for developing, shipping, and running applications inside containers.
+Containers package an application with all of its dependencies, so it runs the same way
+regardless of the environment. Docker makes deployment faster, more reliable, and more
+consistent across development, testing, and production environments.
